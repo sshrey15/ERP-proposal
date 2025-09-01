@@ -457,6 +457,7 @@
                 }
             });
 
+            // Timeline chart for 3 months (about 12-13 weeks)
             const timelineLabels = [
                 'Discovery & UI/UX Design',
                 'Backend, Database & Admin Module',
@@ -466,7 +467,9 @@
                 'Deployment, Training & Handover'
             ];
 
+            // Distribute 3 months (12 weeks) across phases
             const processedTimelineLabels = timelineLabels.map(label => processLabel(label, 16));
+            const timelineMonths = [0.5, 1, 0.5, 0.5, 0.3, 0.2]; // Total: 3 months
 
             const timelineCtx = document.getElementById('timelineChart').getContext('2d');
             new Chart(timelineCtx, {
@@ -474,8 +477,8 @@
                 data: {
                     labels: processedTimelineLabels,
                     datasets: [{
-                        label: 'Duration in Weeks',
-                        data: [2, 5, 4, 6, 3, 1],
+                        label: 'Estimated Months',
+                        data: timelineMonths,
                         backgroundColor: ['#FF6B6B', '#FFD166', '#06D6A0', '#118AB2', '#073B4C', '#FF6B6B'],
                         borderRadius: 5,
                         barThickness: 30
@@ -490,7 +493,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Estimated Weeks',
+                                text: 'Estimated Months',
                                 font: {
                                     size: 14,
                                     weight: 'bold'
