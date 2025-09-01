@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School ERP Platform | Infographic Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F7F7F7;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="text-[#073B4C]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center py-12">
+            <h1 class="text-4xl md:text-5xl font-black text-[#073B4C] mb-4">A Simple, Smart School Management System</h1>
+            <p class="text-lg md:text-xl text-[#118AB2] max-w-3xl mx-auto">This proposal shows how our easy-to-use School ERP platform helps everyone in your school—admins, teachers, students, and parents—work better together. We use modern technology, but you don’t need to be a tech expert to use it!</p>
+        </header>
+
+        <section id="overview" class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-7xl font-black text-[#FF6B6B]">1</div>
+                    <h3 class="text-2xl font-bold mt-4">Who Uses It?</h3>
+                    <p class="mt-2 text-gray-600">Admins, Teachers, Students, and Parents—all have their own simple dashboard.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-7xl font-black text-[#FFD166]">2</div>
+                    <h3 class="text-2xl font-bold mt-4">How Can You Use It?</h3>
+                    <p class="mt-2 text-gray-600">On your computer (website) or on your phone (app)—whichever is easier for you.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-7xl font-black text-[#06D6A0]">3</div>
+                    <h3 class="text-2xl font-bold mt-4">All Data in One Place</h3>
+                    <p class="mt-2 text-gray-600">Everything is stored safely in one system, so nothing gets lost or missed.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="architecture" class="py-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">How Does It Work?</h2>
+                <p class="mt-2 text-lg text-[#118AB2]">Each person gets the right tools for their job, whether on a computer or phone. It’s simple, quick, and secure.</p>
+            </div>
+            <div class="flex flex-col items-center justify-center space-y-8">
+                <!-- Flowchart Start -->
+                <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-4xl mb-8">
+                    <div class="flex flex-col items-center">
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                            <div class="flex flex-col items-center">
+                                <div class="bg-[#118AB2] text-white rounded-full w-24 h-24 flex items-center justify-center text-xl font-bold mb-2">Web App<br>(PWA)</div>
+                                <span class="text-gray-700 font-semibold">Admin, Staff, Student, Parent</span>
+                            </div>
+                            <div class="text-4xl md:text-5xl text-[#118AB2]">⇄</div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-[#06D6A0] text-white rounded-full w-24 h-24 flex items-center justify-center text-xl font-bold mb-2">Mobile App</div>
+                                <span class="text-gray-700 font-semibold">Staff, Student, Parent</span>
+                            </div>
+                        </div>
+                        <div class="text-4xl text-[#073B4C] my-4">↓</div>
+                        <div class="flex flex-wrap justify-center gap-6">
+                            <div class="bg-[#FF6B6B] text-white rounded-lg px-6 py-3 font-bold">Admin</div>
+                            <div class="bg-[#FFD166] text-white rounded-lg px-6 py-3 font-bold">Staff</div>
+                            <div class="bg-[#06D6A0] text-white rounded-lg px-6 py-3 font-bold">Student</div>
+                            <div class="bg-[#118AB2] text-white rounded-lg px-6 py-3 font-bold">Parent</div>
+                        </div>
+                        <div class="text-gray-500 mt-4 text-sm">Centralized Database & Cloud Backend</div>
+                    </div>
+                </div>
+                <!-- Flowchart End -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+                    <div class="bg-[#118AB2] text-white p-6 rounded-lg shadow-md text-center">
+                        <h3 class="text-2xl font-bold">Web Application (PWA)</h3>
+                        <p>Full-featured dashboards for in-depth management.</p>
+                    </div>
+                    <div class="bg-[#06D6A0] text-white p-6 rounded-lg shadow-md text-center">
+                        <h3 class="text-2xl font-bold">Mobile Application</h3>
+                        <p>Focused, on-the-go access for daily tasks.</p>
+                    </div>
+                </div>
+                <div class="text-5xl font-thin text-[#118AB2]">&darr;</div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#FF6B6B]">
+                        <h4 class="text-xl font-bold mb-2">Admin</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li><span class="font-semibold">Web:</span> Full control dashboard</li>
+                            <li><span class="font-semibold">Mobile:</span> Push notices, view summaries</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#FFD166]">
+                        <h4 class="text-xl font-bold mb-2">Staff</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li><span class="font-semibold">Web:</span> Academic & HR features</li>
+                            <li><span class="font-semibold">Mobile:</span> Mark attendance, upload work</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#06D6A0]">
+                        <h4 class="text-xl font-bold mb-2">Student</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li><span class="font-semibold">Web:</span> Full academic access</li>
+                            <li><span class="font-semibold">Mobile:</span> Timetable, homework, grades</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#118AB2]">
+                        <h4 class="text-xl font-bold mb-2">Parent</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li><span class="font-semibold">Web:</span> Read-only tracking portal</li>
+                            <li><span class="font-semibold">Mobile:</span> Attendance, fees, notices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-stack" class="py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-4">A Few Tech Highlights</h2>
+                    <p class="text-lg text-gray-700 mb-6">We use trusted, modern technology to keep things running smoothly and safely. You don’t need to know the details, but here are a few names you might hear:</p>
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">Next.js</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">React Native</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">Node.js</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">PostgreSQL</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="w-12 h-12 mb-2 object-contain" />
+                            <span class="font-semibold">AWS</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="PWA" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">PWA</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#FF6B6B] mr-3"></div><span class="font-semibold">Next.js & React Native:</span> High-performance interfaces.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#FFD166] mr-3"></div><span class="font-semibold">Node.js Backend:</span> Efficient and scalable server logic.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#06D6A0] mr-3"></div><span class="font-semibold">PostgreSQL Database:</span> Reliable and structured data storage.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#118AB2] mr-3"></div><span class="font-semibold">AWS Cloud:</span> Secure, scalable, and global hosting.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#073B4C] mr-3"></div><span class="font-semibold">PWA & Integrations:</span> Enhanced functionality and connectivity.</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="chart-container h-96 md:h-[450px]">
+                        <canvas id="techStackChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desktop Application Tech Stack Section -->
+        <section id="desktop-tech-stack" class="py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-4">Tech Stack for Desktop Application (Offline Use)</h2>
+                    <p class="text-lg text-gray-700 mb-6">For schools that need to access data without internet, we offer a desktop application. It works offline and syncs when online is available.</p>
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">Electron</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">React</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">SQLite</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mb-2" />
+                            <span class="font-semibold">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#FF6B6B] mr-3"></div><span class="font-semibold">Electron:</span> Lets us build desktop apps for Windows, Mac, and Linux.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#FFD166] mr-3"></div><span class="font-semibold">React:</span> Makes the app easy and fast to use.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#06D6A0] mr-3"></div><span class="font-semibold">SQLite:</span> Stores your data safely on your computer, even without internet.</div>
+                        <div class="flex items-center"><div class="w-4 h-4 rounded-full bg-[#118AB2] mr-3"></div><span class="font-semibold">Node.js:</span> Handles all the logic and syncing when internet is available.</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-gray-50 rounded-lg shadow-md p-8 flex flex-col items-center justify-center h-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Electron_Software_Framework_Logo.svg" alt="Electron Logo" class="w-24 h-24 mb-4" />
+                        <p class="text-lg text-gray-700 text-center">Works offline, syncs data when online.<br>Easy to install and use on any computer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="py-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">What Can You Do With It?</h2>
+                <p class="mt-2 text-lg text-[#118AB2]">The system helps with everything: attendance, homework, fees, events, and communication. All in one place, easy to use.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#FF6B6B] mb-3">Academic & Admin</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>▶ Student & Staff Info</li>
+                        <li>▶ Attendance Mgmt</li>
+                        <li>▶ Timetable Setup</li>
+                        <li>▶ Homework Tracking</li>
+                        <li>▶ Exam & Result Mgmt</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#FFD166] mb-3">Fee & Finance</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>▶ Fee Structure Config</li>
+                        <li>▶ Fee Collection</li>
+                        <li>▶ Overdue Tracking</li>
+                        <li>▶ Tally CSV Export</li>
+                        <li>▶ Staff Payroll</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#06D6A0] mb-3">Utilities</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>▶ Document Uploads</li>
+                        <li>▶ Academic Calendar</li>
+                        <li>▶ Event Notices</li>
+                        <li>▶ Leave Management</li>
+                        <li>▶ Report Generation</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#118AB2] mb-3">Communication</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>▶ In-app Notices</li>
+                        <li>▶ Email Notifications</li>
+                        <li>▶ SMS Alerts</li>
+                        <li>▶ Push Notifications</li>
+                        <li>▶ Circulars Module</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="integrations" class="py-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Connects With What You Already Use</h2>
+                <p class="mt-2 text-lg text-[#118AB2]">It works with Google email, biometric attendance, and accounting software—so you don’t have to change your habits.</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                    <img src="https://www.gstatic.com/images/branding/product/1x/gmail_2020q4_48dp.png" alt="Google Workspace" class="w-16 h-16 mb-2" />
+                    <h3 class="text-xl font-bold">Google Workspace</h3>
+                    <p class="text-gray-600 mt-2">Utilizes Google email as the primary login ID and Gmail SMTP for reliable communication.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Biometric" class="w-16 h-16 mb-2" />
+                    <h3 class="text-xl font-bold">Biometric Ready</h3>
+                    <p class="text-gray-600 mt-2">A middleware-ready API to integrate with biometric devices for real-time attendance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col items-center">
+                    <img src="https://tallysolutions.com/assets/images/logo.png" alt="Tally Prime" class="w-20 h-10 mb-4 object-contain bg-white" style="background:#fff;" />
+                    <h3 class="text-xl font-bold">Tally Prime</h3>
+                    <p class="text-gray-600 mt-2">Easily export fee and payroll data in Tally-compatible CSV/XML format for accounting.</p>
+                </div>
+            </div>
+        </section>
+        
+  
+
+
+            <!-- Database Schema Section -->
+            <section id="db-schema" class="py-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Sample Database Schemas</h2>
+                    <p class="mt-2 text-lg text-[#118AB2]">Here are simple examples of how we organize school data in tables.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-[#FF6B6B] mb-3">Student Table</h3>
+                        <table class="min-w-full text-left border border-gray-200">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-2 px-3 border-b">Column</th>
+                                    <th class="py-2 px-3 border-b">Type</th>
+                                    <th class="py-2 px-3 border-b">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="py-1 px-3 border-b">student_id</td><td class="py-1 px-3 border-b">INTEGER</td><td class="py-1 px-3 border-b">Unique ID</td></tr>
+                                <tr><td class="py-1 px-3 border-b">name</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Full Name</td></tr>
+                                <tr><td class="py-1 px-3 border-b">class</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Class/Grade</td></tr>
+                                <tr><td class="py-1 px-3 border-b">dob</td><td class="py-1 px-3 border-b">DATE</td><td class="py-1 px-3 border-b">Date of Birth</td></tr>
+                                <tr><td class="py-1 px-3 border-b">parent_contact</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Parent Phone</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-[#FFD166] mb-3">Staff Table</h3>
+                        <table class="min-w-full text-left border border-gray-200">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-2 px-3 border-b">Column</th>
+                                    <th class="py-2 px-3 border-b">Type</th>
+                                    <th class="py-2 px-3 border-b">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="py-1 px-3 border-b">staff_id</td><td class="py-1 px-3 border-b">INTEGER</td><td class="py-1 px-3 border-b">Unique ID</td></tr>
+                                <tr><td class="py-1 px-3 border-b">name</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Full Name</td></tr>
+                                <tr><td class="py-1 px-3 border-b">role</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Teacher/Admin</td></tr>
+                                <tr><td class="py-1 px-3 border-b">contact</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Phone</td></tr>
+                                <tr><td class="py-1 px-3 border-b">salary</td><td class="py-1 px-3 border-b">DECIMAL</td><td class="py-1 px-3 border-b">Monthly Salary</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-[#06D6A0] mb-3">Fee Table</h3>
+                        <table class="min-w-full text-left border border-gray-200">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-2 px-3 border-b">Column</th>
+                                    <th class="py-2 px-3 border-b">Type</th>
+                                    <th class="py-2 px-3 border-b">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="py-1 px-3 border-b">fee_id</td><td class="py-1 px-3 border-b">INTEGER</td><td class="py-1 px-3 border-b">Unique ID</td></tr>
+                                <tr><td class="py-1 px-3 border-b">student_id</td><td class="py-1 px-3 border-b">INTEGER</td><td class="py-1 px-3 border-b">Student Reference</td></tr>
+                                <tr><td class="py-1 px-3 border-b">amount</td><td class="py-1 px-3 border-b">DECIMAL</td><td class="py-1 px-3 border-b">Fee Amount</td></tr>
+                                <tr><td class="py-1 px-3 border-b">due_date</td><td class="py-1 px-3 border-b">DATE</td><td class="py-1 px-3 border-b">Due Date</td></tr>
+                                <tr><td class="py-1 px-3 border-b">status</td><td class="py-1 px-3 border-b">VARCHAR</td><td class="py-1 px-3 border-b">Paid/Unpaid</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                      <section id="timeline" class="py-12">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">How We Set It Up For You</h2>
+                    <p class="mt-2 text-lg text-[#118AB2]">We set up everything step by step, so you always know what’s happening. Here’s a simple timeline for the project.</p>
+                </div>
+                 </section>
+                </div>
+                <div class="chart-container h-96 md:h-[450px]">
+                    <canvas id="timelineChart"></canvas>
+                </div>
+            </div>
+        </section>
+            </div>
+           
+
+    </div>
+
+    <footer class="text-center py-8 bg-gray-800 text-white mt-12">
+        <p>This infographic was generated based on the project proposal document.</p>
+        <p>&copy; 2025 . All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const processLabel = (label, maxLength) => {
+                if (label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                }
+                return label;
+            };
+
+            const sharedTooltipOptions = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            };
+            
+            const techStackCtx = document.getElementById('techStackChart').getContext('2d');
+            new Chart(techStackCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Frontend (Next.js/RN)', 'Backend (Node.js)', 'Database (PostgreSQL)', 'Cloud & Hosting (AWS)', 'Utilities (PWA/APIs)'],
+                    datasets: [{
+                        label: 'Technology Stack',
+                        data: [30, 20, 15, 25, 10],
+                        backgroundColor: ['#FF6B6B', '#FFD166', '#06D6A0', '#118AB2', '#073B4C'],
+                        borderColor: '#F7F7F7',
+                        borderWidth: 4,
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                             labels: {
+                                font: {
+                                    size: 14,
+                                    family: 'Inter'
+                                }
+                            }
+                        },
+                         tooltip: sharedTooltipOptions.plugins.tooltip
+                    }
+                }
+            });
+
+            const timelineLabels = [
+                'Discovery & UI/UX Design',
+                'Backend, Database & Admin Module',
+                'Staff & Student Web Portals',
+                'Parent Portal & Mobile Apps',
+                'Integrations & Testing',
+                'Deployment, Training & Handover'
+            ];
+
+            const processedTimelineLabels = timelineLabels.map(label => processLabel(label, 16));
+
+            const timelineCtx = document.getElementById('timelineChart').getContext('2d');
+            new Chart(timelineCtx, {
+                type: 'bar',
+                data: {
+                    labels: processedTimelineLabels,
+                    datasets: [{
+                        label: 'Duration in Weeks',
+                        data: [2, 5, 4, 6, 3, 1],
+                        backgroundColor: ['#FF6B6B', '#FFD166', '#06D6A0', '#118AB2', '#073B4C', '#FF6B6B'],
+                        borderRadius: 5,
+                        barThickness: 30
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Estimated Weeks',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            }
+                        },
+                        y: {
+                           ticks: {
+                                font: {
+                                    size: 12
+                                }
+                           }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: sharedTooltipOptions.plugins.tooltip
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
